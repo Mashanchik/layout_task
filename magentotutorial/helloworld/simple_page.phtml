@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+<h1>hello</h1>
+<form action="formparam" id="form" class="form-horizontal" method="post">
+    <input type="hidden" value="" name="id"/>
+    <div class="fieldset">
+        <div>
+            <label>First Name</label>
+            <div>
+                <input name="firstName" placeholder="First Name" type="text">
+            </div>
+        </div>
+        <div>
+            <label>Last Name</label>
+            <div>
+                <input name="lastName" placeholder="Last Name" type="text">
+            </div>
+        </div>
+        <div>
+            <label>Email</label>
+            <div>
+                <input name="email" placeholder="email" type="text">
+            </div>
+        </div>
+        <div>
+            <label>Adress</label>
+            <div>
+                <input name="adress" placeholder="adress" type="text">
+            </div>
+        </div>
+        <div>
+            <label>Phone</label>
+            <div>
+                <input name="phone" placeholder="phone" type="text">
+            </div>
+        </div>
+    </div>
+    <div class="buttons-set">
+        <button type="submit" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Submit')) ?>" class="button"><span><span><?php echo $this->__('Submit') ?></span></span></button>
+    </div>
+</form>
+
+</body>
+</html>

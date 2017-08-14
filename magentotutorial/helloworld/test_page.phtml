@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+    <p>Name: <?php echo Mage::app()->getRequest()->getParam('firstName'); ?></p>
+    <p>LastName: <?php echo Mage::app()->getRequest()->getParam('lastName'); ?></p>
+    <p>Email: <?php echo Mage::app()->getRequest()->getParam('email'); ?></p>
+    <p>Adress: <?php echo Mage::app()->getRequest()->getParam('adress'); ?></p>
+    <p>Phone: <?php echo Mage::app()->getRequest()->getParam('phone'); ?></p>
+</body>
+</html>
